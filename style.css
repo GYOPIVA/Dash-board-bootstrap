@@ -38,4 +38,79 @@ body {
     background-color: #f8f9fa;
 }
 
+ .chart-placeholder {
+  background: repeating-linear-gradient(
+    90deg,
+    var(--bs-secondary-bg) 0px,
+    var(--bs-secondary-bg) 1px,
+    transparent 1px,
+    transparent 60px
+  ),
+  repeating-linear-gradient(
+    180deg,
+    var(--bs-secondary-bg) 0px,
+    var(--bs-secondary-bg) 1px,
+    transparent 1px,
+    transparent 40px
+  );
+  height: 220px;
+  border-radius: 8px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 12px;
+  padding: 20px;
+  overflow: hidden;
+}
+ 
+.chart-bar {
+  flex: 1;
+  border-radius: 6px 6px 0 0;
+  background: linear-gradient(to top, var(--bs-primary), #6ea8fe);
+  opacity: 0.85;
+  animation: barGrow 0.8s ease forwards;
+  transform-origin: bottom;
+}
+
+@keyframes barGrow {
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
+
+.chart-bar:nth-child(1) {
+  height: 55%;
+  animation-delay: 0.05s;
+}
+
+.chart-bar:nth-child(2) {
+  height: 80%;
+  animation-delay: 0.1s;
+}
+
+.chart-bar:nth-child(3) {
+  height: 65%;
+  animation-delay: 0.15s;
+}
+
+.chart-bar:nth-child(4) {
+  height: 90%;
+  animation-delay: 0.2s;
+}
+
+.chart-bar:nth-child(5) {
+  height: 70%;
+  animation-delay: 0.25s;
+}
+
+.chart-bar:nth-child(6) {
+  height: 100%;
+  animation-delay: 0.3s;
+  background: linear-gradient(to top, #0f6e3a, #20c997);
+}
+
+
 
