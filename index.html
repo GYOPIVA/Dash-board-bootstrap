@@ -191,16 +191,28 @@
                     </div>
                 </div>
 
-                <div class="card border-0 shadow-sm mb-4">
-                    <div class="card-header py-3">
-                        <h5 class="mb-0">Desempenho de Vendas (Últimos 6 meses)</h5>
-                    </div>
-                    <div class="card-body text-center">
-                        <img src="https://placehold.co/800x300/e9ecef/495057?text=Area+do+Grafico+(Chart.js)"
-                            class="img-fluid rounded" alt="Gráfico">
-                    </div>
-                </div>
-
+               <div class="card border-0 shadow-sm mb-4">
+        <div class="card-header bg-transparent py-3 d-flex justify-content-between align-items-center">
+          <h5 class="mb-0">Desempenho de Vendas (Últimos 6 meses)</h5>
+          <div class="d-flex gap-3">
+            <small class="text-muted"><span class="badge bg-primary me-1">&nbsp;</span>Vendas</small>
+            <small class="text-muted"><span class="badge bg-success me-1">&nbsp;</span>Meta</small>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="chart-placeholder">
+            <div class="chart-bar"></div>
+            <div class="chart-bar"></div>
+            <div class="chart-bar"></div>
+            <div class="chart-bar"></div>
+            <div class="chart-bar"></div>
+            <div class="chart-bar"></div>
+          </div>
+          <div class="d-flex justify-content-around mt-2 text-muted" style="font-size: 0.75rem;">
+            <span>Out</span><span>Nov</span><span>Dez</span><span>Jan</span><span>Fev</span><span>Mar</span>
+          </div>
+        </div>
+      </div>
                 <div class="card border-0 shadow-sm">
                     <div class="card-header py-3">
                         <h5 class="mb-0">Pedidos Recentes</h5>
